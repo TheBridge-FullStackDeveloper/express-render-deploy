@@ -15,7 +15,7 @@ const router = require('./routes');
 
 app.use('/api', router);
 app.use('/', (req, res) => {
-  res.render('Hello World');
+  res.send('Hello World');
 });
 
 app.listen(PORT, () => {
