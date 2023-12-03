@@ -14,6 +14,9 @@ app.set('views', './views');
 const router = require('./routes');
 
 app.use('/api', router);
+app.use('/', (req, res) => {
+  res.render('Hello World');
+});
 
 app.listen(PORT, () => {
   console.log(`Servidor corriendo en puerto ${PORT}`);
